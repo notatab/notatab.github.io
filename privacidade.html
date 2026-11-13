@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NotaTab – Política de Privacidade</title>
+<link rel="icon" href="icone.png">
+<style>
+  body { margin: 0; background: #f4f5f7; color: #1f2328; font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 48px 24px 64px; }
+  header { display: flex; align-items: center; gap: 14px; margin-bottom: 8px; }
+  .logo { width: 44px; height: 44px; border-radius: 11px; background: #2563eb; display: grid; place-items: center; color: #fff; font-weight: 800; font-size: 22px; }
+  h1 { font-size: 28px; margin: 0; }
+  .meta { color: #6b7280; font-size: 14px; margin: 0 0 32px; }
+  h2 { font-size: 19px; margin: 32px 0 8px; }
+  section { background: #fff; border: 1px solid rgba(0,0,0,.07); border-radius: 12px; padding: 8px 24px 20px; margin-bottom: 16px; }
+  ul { padding-left: 22px; }
+  li { margin: 4px 0; }
+  .en { color: #4b5563; font-size: 15px; }
+  code { background: #eef0f3; padding: 1px 5px; border-radius: 4px; font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <p style="margin:0 0 18px"><a href="./" style="color:#2563eb;text-decoration:none">← NotaTab</a></p>
+  <header><img src="icone.png" alt="" style="width:44px;height:44px"><h1>Política de Privacidade do NotaTab</h1></header>
+  <p class="meta">Última atualização: 13 de novembro de 2026 · Desenvolvedor: Moacir Ribolli Junior</p>
+
+  <section>
+    <h2>Resumo</h2>
+    <p>O NotaTab é uma extensão do Google Chrome que mostra um mural de notas na página de nova guia. <b>O desenvolvedor não coleta, não recebe, não armazena em servidores próprios, não vende e não compartilha nenhum dado dos usuários.</b> Não há análise de uso, anúncios, rastreamento ou contas próprias.</p>
+  </section>
+
+  <section>
+    <h2>Quais informações a extensão guarda</h2>
+    <ul>
+      <li>O conteúdo das notas que você escreve, a posição, o tamanho e a cor de cada nota;</li>
+      <li>Os nomes dos quadros que você cria;</li>
+      <li>Suas preferências de aparência (por exemplo, o fundo escolhido);</li>
+      <li>A lista de atalhos do menu de apps e, se você escolher, uma foto para o ícone da conta.</li>
+    </ul>
+    <p>A extensão não lê o conteúdo de sites que você visita e não acessa seu histórico de navegação. A única permissão obrigatória é <code>storage</code>.</p>
+    <p><b>Conta conectada (opcional):</b> se você clicar em "Mostrar a conta conectada ao Chrome", a extensão pede as permissões <code>identity</code> e <code>identity.email</code> para ler o endereço de e-mail da conta conectada ao Chrome e exibi-lo no ícone da conta, dentro da página. O e-mail não é armazenado, transmitido nem compartilhado. Você pode retirar essa permissão a qualquer momento pela própria extensão ou em <i>chrome://extensions</i>.</p>
+    <p><b>Nome e foto do perfil (opcional):</b> ao autorizar com sua Conta do Google, a extensão pode ler seu nome e sua foto de perfil apenas para exibi-los no ícone da conta. Essas informações não são enviadas a ninguém.</p>
+    <p><b>Ícones do menu de apps:</b> os ícones dos apps do Google e dos sites que você adicionar ao menu são carregados como imagens dos servidores do Google (<code>www.gstatic.com</code> e o serviço de ícones <code>www.google.com/s2/favicons</code>). Para isso, o navegador informa ao Google o endereço dos sites desse menu, como acontece ao carregar qualquer imagem da internet. Nenhuma nota ou outro dado seu é enviado.</p>
+  </section>
+
+  <section>
+    <h2>Onde essas informações ficam</h2>
+    <ul>
+      <li><b>No seu navegador</b>, por meio da API de armazenamento do Chrome (<code>chrome.storage</code>);</li>
+      <li><b>Na sua própria conta Google</b>, somente se você tiver a sincronização do Chrome ativada. Nesse caso, quem transmite e guarda os dados é o próprio Google Chrome, para que suas notas apareçam nos seus outros computadores. Esse tratamento segue a <a href="https://policies.google.com/privacy">Política de Privacidade do Google</a>.</li>
+    </ul>
+    <p>A extensão não se comunica com nenhum servidor do desenvolvedor nem de terceiros e não carrega código remoto.</p>
+  </section>
+
+  <section>
+    <h2>Exportação e exclusão</h2>
+    <ul>
+      <li><b>Backup automático no Google Drive (opcional):</b> se você ativar, uma cópia das notas é gravada uma vez por dia na pasta <b>NotaTab</b> do <b>seu próprio Google Drive</b>, usando a permissão <code>drive.file</code>, que só dá acesso aos arquivos criados pelo NotaTab. Os backups ficam na sua conta, sob seu controle, e podem ser apagados no Drive a qualquer momento. O desenvolvedor não tem acesso a eles.</li>
+      <li>Você pode exportar todas as suas notas a qualquer momento pelo menu da extensão (arquivo <code>.json</code> salvo no seu computador).</li>
+      <li>Para excluir os dados, apague as notas e os quadros na própria extensão ou desinstale-a. Os dados sincronizados também podem ser apagados em <i>Configurações do Chrome › Sincronização › Dados do Chrome na sua conta</i>.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Uso limitado</h2>
+    <p>O uso das informações segue a Política de Dados do Usuário da Chrome Web Store, incluindo os requisitos de uso limitado: os dados servem apenas para exibir e sincronizar suas notas, não são transferidos a terceiros, não são usados para publicidade e não são usados para avaliar crédito ou para empréstimos.</p>
+  </section>
+
+  <section>
+    <h2>Alterações e contato</h2>
+    <p>Se esta política mudar, a nova versão será publicada nesta página com a data atualizada. Dúvidas: <b>moacir.flamel@gmail.com</b>.</p>
+  </section>
+
+  <section class="en">
+    <h2>English summary</h2>
+    <p>NotaTab is a Chrome extension that shows sticky notes on the new tab page. The developer does not collect, receive, sell or share any user data. Optional daily backups are written to a "NotaTab" folder in the user's own Google Drive using the drive.file scope (access only to files created by NotaTab); the developer has no access to them. With the user's authorization, the extension may read the user's profile name and photo only to display them in the account icon. Notes and settings are stored only in the user's browser via <code>chrome.storage</code> and, if Chrome Sync is enabled, in the user's own Google account, handled by Google Chrome. The extension does not send notes or settings to any server and does not run remote code. It requires only the <code>storage</code> permission; the optional <code>identity</code>/<code>identity.email</code> permissions (to display, locally, the email of the account signed in to Chrome — never stored or transmitted) are requested only if the user enables that feature. Icons in the apps menu are loaded as images from Google servers (www.gstatic.com and www.google.com/s2/favicons), which receive the addresses of the sites listed in that menu. Contact: moacir.flamel@gmail.com.</p>
+  </section>
+</main>
+</body>
+</html>

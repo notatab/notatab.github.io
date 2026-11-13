@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NotaTab – Notas na Nova Guia</title>
+<meta name="description" content="NotaTab é uma extensão do Chrome que transforma a nova guia em um mural de notas, com sincronização e backup no Google Drive.">
+<link rel="icon" href="icone.png">
+<style>
+  :root { --accent: #2563eb; --fg: #1f2328; --muted: #5b6472; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: var(--fg); background: #f6f7f9; }
+  a { color: var(--accent); }
+  header { background: #16171a; color: #fff; }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 0 24px; }
+  nav { display: flex; align-items: center; justify-content: space-between; padding: 18px 0; }
+  .brand { display: flex; align-items: center; gap: 10px; color: #fff; text-decoration: none; font-weight: 700; font-size: 19px; }
+  .brand img { width: 34px; height: 34px; }
+  nav .links a { color: #cfd3da; text-decoration: none; margin-left: 22px; font-size: 15px; }
+  nav .links a:hover { color: #fff; }
+  .hero { padding: 48px 0 0; text-align: center; }
+  .hero h1 { font-size: clamp(30px, 5vw, 46px); line-height: 1.15; margin: 0 0 14px; letter-spacing: -.5px; }
+  .hero p { color: #c4c9d2; font-size: 19px; max-width: 640px; margin: 0 auto 28px; }
+  .btn { display: inline-block; background: var(--accent); color: #fff; text-decoration: none; font-weight: 600; padding: 13px 26px; border-radius: 12px; }
+  .btn:hover { background: #1d4ed8; }
+  .shot { display: block; width: 100%; max-width: 900px; margin: 40px auto 0; border-radius: 14px 14px 0 0; box-shadow: 0 -8px 40px rgba(0,0,0,.35); }
+  section { padding: 56px 0; }
+  h2 { font-size: 28px; margin: 0 0 24px; text-align: center; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; }
+  .card { background: #fff; border: 1px solid #e6e8ec; border-radius: 14px; padding: 20px 22px; }
+  .card h3 { margin: 0 0 6px; font-size: 18px; }
+  .card p { margin: 0; color: var(--muted); font-size: 15.5px; }
+  .note { background: #fff; border: 1px solid #e6e8ec; border-radius: 14px; padding: 22px 26px; max-width: 760px; margin: 0 auto; color: var(--muted); }
+  footer { border-top: 1px solid #e6e8ec; padding: 28px 0 40px; color: var(--muted); font-size: 14.5px; text-align: center; }
+  footer a { margin: 0 8px; }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <nav>
+      <a class="brand" href="./"><img src="icone.png" alt="">NotaTab</a>
+      <div class="links"><a href="#recursos">Recursos</a><a href="#privacidade">Privacidade</a><a href="privacidade.html">Política</a></div>
+    </nav>
+    <div class="hero">
+      <h1>Suas notas na nova guia do Chrome</h1>
+      <p>Um mural de notas livres que aparece toda vez que você abre uma nova guia, sincronizado entre seus computadores e com backup no seu Google Drive.</p>
+      <a class="btn" href="https://chromewebstore.google.com/detail/pojgebbfofpahmhaaihkfijdemihpbdf">Instalar na Chrome Web Store</a>
+      <img class="shot" src="captura.jpg" alt="Tela do NotaTab com notas coloridas na nova guia">
+    </div>
+  </div>
+</header>
+
+<main>
+  <section id="recursos">
+    <div class="wrap">
+      <h2>O que dá para fazer</h2>
+      <div class="grid">
+        <div class="card"><h3>Notas livres</h3><p>Crie com dois cliques, arraste, redimensione e dê um título. O arranjo se adapta a telas de tamanhos diferentes.</p></div>
+        <div class="card"><h3>Quadros</h3><p>Separe as notas por assunto, como Pessoal e Trabalho, arquive o que não precisa mais e busque em tudo com a tecla /.</p></div>
+        <div class="card"><h3>Listas de tarefas</h3><p>Transforme linhas em itens com caixa de seleção; o item marcado fica riscado.</p></div>
+        <div class="card"><h3>Do seu jeito</h3><p>Cores prontas ou personalizadas, fontes e tamanhos de letra, e fundo da página com cor, padrão ou imagem.</p></div>
+        <div class="card"><h3>Sincronização</h3><p>Com a sincronização do Chrome ativada, as notas aparecem em todos os computadores da mesma conta.</p></div>
+        <div class="card"><h3>Backup no Google Drive</h3><p>Uma cópia diária na pasta NotaTab do seu Drive. Se precisar reinstalar, as notas voltam com um clique.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="privacidade" style="padding-top:0">
+    <div class="wrap">
+      <h2>Privacidade</h2>
+      <div class="note">
+        <p style="margin-top:0">O NotaTab não tem anúncios, não rastreia o que você faz e não envia suas notas para servidores do desenvolvedor. As notas ficam no seu navegador e, se você quiser, na sua própria conta Google: na sincronização do Chrome e em uma pasta do seu Google Drive à qual só o NotaTab tem acesso.</p>
+        <p style="margin-bottom:0">Leia a <a href="privacidade.html">Política de Privacidade completa</a>.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    NotaTab · desenvolvido por Moacir Ribolli Junior ·
+    <a href="privacidade.html">Política de Privacidade</a> ·
+    <a href="termos.html">Termos de Uso</a> ·
+    Contato: moacir.flamel@gmail.com
+  </div>
+</footer>
+</body>
+</html>
